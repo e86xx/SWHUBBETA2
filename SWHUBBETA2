@@ -1,0 +1,65 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "FREE|SW HUB🥷🔫", HidePremium = false, IntroText = "SW HUB", SaveConfig = true, ConfigFolder = "SW HUb"})
+
+
+local FarmTab = Window:MakeTab({
+	Name = "AutoFarm",
+	Icon = "rbxassetid://12368066930",
+	PremiumOnly = false
+})
+
+FarmTab:AddButton({
+	Name = "AutoClicker!",
+	Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/e86xx/SwHubClicker/main/SwHubClicker"), true))()
+  	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Wsh!",
+	Content = "For Help Contact >!'Rzeyen#6432 ",
+	Image = "rbxassetid://12368066930",
+	Time = 15
+})
+
+
+FarmTab:AddButton({
+	Name = "AutoEquip!(GUI)",
+	Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/e86xx/SwAutoEquip/main/SwAutoEquip"), true))()
+  	end    
+})
+
+FarmTab:AddButton({
+	Name = "Inf Yield",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+
+local CombatTab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://12368066930",
+	PremiumOnly = false
+})
+
+
+CombatTab:AddButton({
+	Name = "Monkey HUB",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkeyHUBB/MonkeyHUB_StreetzWar/main/README.md%22'))()
+  	end    
+})
+
+
+FarmTab:AddButton({
+	Name = "AutoFarm",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/e86xx/AUTOFARMSW/main/AUTOFARMSW'))()
+  	end    
+})
+
+
+OrionLib:Init()
+
